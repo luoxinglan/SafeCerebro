@@ -1,0 +1,18 @@
+[
+    {
+        "algorithm": "ddd",
+        "scenario": "one",
+        "run": "high",
+        "time": "fivehundred",
+        "rendering": "render",
+        "thread": "eight"
+    },
+    {
+        "algorithm": "dqn",
+        "scenario": "two",
+        "run": "left",
+        "time": "thousand",
+        "rendering": "rgbarray",
+        "thread": "sixteen"
+    }
+]

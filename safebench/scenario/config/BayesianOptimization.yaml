@@ -1,0 +1,28 @@
+scenario_type_dir: 'safebench/scenario/config/scenario_type'
+scenario_type: 'adv_init_state.json'
+scenario_category: 'planning'
+policy_type: 'BayesianOptimization'
+
+route_dir: 'safebench/scenario/scenario_data/route'
+scenario_id: 8
+route_id: 4
+
+ego_action_dim: 2
+ego_state_dim: 4
+ego_action_limit: 1.0
+
+# general
+model_path: 'safebench/scenario/scenario_data/model_ckpt/BayesianOptimization'
+model_id: 1
+buffer_capacity: 1000
+batch_size: 1
+eval_in_train_freq: 10
+save_freq: 20
+train_episode: 2000
+itr_per_train: 5
+
+# bayesian optimization
+num_scenario: 1
+num_scenario_x: 2
+n_init: 3
+n_iter: 10

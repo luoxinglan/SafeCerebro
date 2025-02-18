@@ -1,0 +1,42 @@
+scenario_type_dir: 'safebench/scenario/config/scenario_type'
+scenario_type: 'adv_behavior_single.json'
+scenario_category: 'planning'
+policy_type: 'ppo_cd'
+
+route_dir: 'safebench/scenario/scenario_data/route'
+scenario_id: 8
+route_id: 4
+
+# parameters for scenario policy
+# for scenario id 1
+#scenario_state_dim: 27 # 3*9 - actor number * actor info dim
+#scenario_action_dim: 1
+
+ego_state_dim: 4 # 2*9 - actor number * actor info dim
+ego_action_dim: 2
+ego_action_limit: 1
+
+# for scenario id 8
+scenario_state_dim: 8 # 2*9 - actor number * actor info dim
+scenario_action_dim: 1
+scenario_hidden_dim: 128
+
+# for PPO policy model
+model_path: 'safebench/scenario/scenario_data/model_ckpt/ppo_cd'
+model_id: 1
+
+train_episode: 2000
+eval_in_train_freq: 1
+save_freq: 40
+buffer_capacity: 12000
+
+clip_epsilon: 0.1
+gamma: 0.95
+train_iteration: 5   # how many times training
+train_interval: 1     # how often training
+policy_lr: 80.0e-4
+value_lr: 80.0e-3
+batch_size: 128
+lmbda: 0.9 #奖励轨迹截断系数
+
+
