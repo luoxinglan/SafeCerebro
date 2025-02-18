@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!--
  * @Date: 2023-01-25 19:36:50
  * @LastEditTime: 2023-04-12 14:02:50
@@ -267,3 +268,7 @@ echo $PYTHONPATH
 ```
 
 这将输出您刚刚设置的环境变量值。如果一切正常，您应该看到之前定义的路径。
+=======
+# SafeCerebro
+A Web and FastApi application.
+>>>>>>> 34cf514ba1768ba80f9a32abf823507e69e89e7d
